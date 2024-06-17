@@ -1,10 +1,13 @@
-import './App.css'
+import { ThemeProvider } from '@mui/material'
+import { LightTheme } from './themes/Light'
 import Home from './page/Home'
 
 function App() {
   return (
     <div>
-      <Home></Home>
+      <ThemeProvider theme={LightTheme}>
+        <Home></Home>
+      </ThemeProvider>
     </div>
   )
 }
